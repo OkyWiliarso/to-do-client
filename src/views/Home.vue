@@ -124,7 +124,7 @@ export default {
             })
           })
         })
-      })
+      },{scope: 'public_profile,email'})
     }
   }
 }
