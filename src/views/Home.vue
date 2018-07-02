@@ -94,7 +94,7 @@ export default {
     },
     loginfb: function () {
       let self = this
-      FB.getLoginStatus(function(res) {
+      FB.login(function(res) {
         FB.api('/me','GET', {fields: ['name', 'email']}, function(response){
           let user = {
             username: response.name,
